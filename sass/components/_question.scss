@@ -1,0 +1,114 @@
+.question {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%);
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-image: inherit;
+        z-index: -1;
+        // box-shadow: 0px 0px 1px rgb(255, 255, 255);
+        border-radius: 5px;
+        filter: blur(1px);
+    }
+
+    .question__number {
+        // margin-bottom: 50px;
+        text-transform: uppercase;
+        padding: 50px 0;
+        // margin-bottom: 30px;
+
+    }
+
+    .question__header {
+        margin-bottom: 20px;
+    }
+
+    .question__answers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input[type=radio] {
+            background-color: #000;
+        }
+        
+        input {
+            width: 50px;
+            margin-right: 5px;
+        }
+
+        p {
+            margin-right: 10px;
+        }
+    }
+
+    .question__buttons {
+        margin-top: 30px;
+
+        button {
+            // width: 120px;
+            // height: 100px;
+            margin-right: 10px;
+            padding: 5px 10px;
+            width: 130px;
+            padding: 10px 15px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,145,1) 0%, rgba(74,183,240,1) 100%);
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-weight: bolder;
+            cursor: pointer;
+            margin-bottom: 20px;
+
+            &[id="btn-submit"]{
+                color: #fff;
+                background: linear-gradient(270deg, rgb(22, 135, 180) 2%, rgb(15, 33, 92) 100%, rgba(0,0,0,1) 100%);
+                &:hover{
+                    color: #000;     
+                    background: linear-gradient(270deg, rgb(252, 252, 252) 2%, rgb(255, 255, 255) 100%, rgba(0,0,0,1) 100%);
+                    border: none;
+                    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0);
+                    
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                // font-size: 14px;
+                color: #fff;
+                // border: 1px solid #fff;
+                box-shadow: 0px 0px .5px .5px #fff;
+            }
+
+            &[disabled] {
+
+                filter: grayscale(70%); 
+
+                &:hover {
+
+                    cursor: initial;
+                    // font-size: 14px;
+                    color: rgb(110, 110, 110);
+                    // border: 1px solid #fff;
+                    box-shadow: none;
+                }
+            }
+
+            i {
+                padding: 0 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}

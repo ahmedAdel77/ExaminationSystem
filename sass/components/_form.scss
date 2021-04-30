@@ -1,0 +1,99 @@
+.registeration-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-image: inherit;
+        z-index: -1;
+        // box-shadow: 0px 0px 1px rgb(255, 255, 255);
+        border-radius: 5px;
+        filter: blur(1px);
+    }
+
+    .form-header {
+        margin-top: -40px;
+        text-transform: uppercase;
+        padding: 50px 0;
+
+        // margin-bottom: 30px;
+    }
+
+    .form-section {
+        padding: 10px 0;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+
+    label {
+        text-transform: capitalize;
+    }
+
+    input {
+        padding: 10px 5px;
+        border-radius: 3px;
+        border: none;
+        margin-left: 10px;
+        // border: 2px solid rgba(79, 143, 185, 0.3);
+        // box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.13);
+
+        &:focus {
+            outline: none;
+        }
+
+        &#email {
+            margin-left: 35px;
+        }
+    }
+
+    .gender-label {
+        margin-left: -30px;
+    }
+
+    .gender-group {
+        margin-left: 45px;
+    }
+
+    .gander-radio {
+        margin: 0 5px;
+    }
+
+    .form-btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 130px;
+        padding: 15px 20px;
+        background: linear-gradient(145deg, rgba(2, 0, 36, 1) 0%, rgba(145, 145, 145, 1) 0%, rgba(74, 183, 240, 1) 100%);
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-weight: bolder;
+
+        &:hover {
+            cursor: pointer;
+            // font-size: 14px;
+            color: #fff;
+            // border: 1px solid #fff;
+            box-shadow: 0px 0px 1px 1px #fff;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

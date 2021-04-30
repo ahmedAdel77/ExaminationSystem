@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Registeration - Examination System</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form  class="registeration-form">
+
+            <h1 class="form-header">Registeration</h1>
+
+            <div class="form-section">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="e.g. Ahmed Adel">
+            </div>
+
+            <div class="form-section">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="e.g. example@gmail.com">
+            </div>
+
+            <!-- <label for="password">Password</label>
+                <input type="password" name="password" id="password"> -->
+
+            <div class="form-section" style="display: flex;flex-direction: row; justify-content: center;">
+                <label for="gender" class="gender-label">Gender:</label>
+                <div class="radio-group gender-group">
+                    <input type="radio" class="gander-radio" name="gender" id="gender1" value="male">Male
+                    <input type="radio" class="gander-radio" name="gender" id="gender2" value="female">Female
+                </div>
+            </div>
+
+            <button class="form-btn" type="button">Enter Quiz</button>
+
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,145,1) 30%, rgba(74,183,240,1) 100%);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+::selection {
+    background-color: cornflowerblue;
+    color: rgb(22, 22, 22);
+}
+.container {
+    display: flex;
+    justify-content: center;
+
+    margin-right: auto; 
+    margin-left:  auto; 
+  
+    // max-width: 1200px;
+  
+    padding-right: 10px; 
+    padding-left:  10px; 
+    position: relative;
+    // left: 50%;
+    // transform: translate(-50%);
+}
